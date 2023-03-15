@@ -5,10 +5,25 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const fuits = [
+  'Apple',
+  'Banana',
+  'Orange',
+  'Apricot',
+  'Black rowan',
+  'Cranberry'
+]
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <div>
+    <h1>List of fruits</h1>
+    <ul>
+      {fuits.map((item)=>(
+        <li>{item}</li>
+      ))}
+      
+    </ul>
+  </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
